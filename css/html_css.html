@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Documento</title>
+    <style>
+        body{
+            background-color: #f5deb3;
+            background-image: url(imagem/textura01.jpg);
+           /* background-repeat: no-repeat; ###para que a imagem não repita"*/ 
+           /* background-position-x: center; ##para sentralizar a imagem */ 
+           font-family: verdana, arial, sans-serif;
+        }
+        h1{
+            background-color: black;
+            color: white;
+            text-align: center; /* para aredondar as bordas*/
+            padding: 20px;
+            border-radius: 15px;
+        }
+        h2{ 
+            font-style: italic;
+            border-bottom-style: solid;
+            border-bottom-color: red;
+            border-bottom-width: 5px;
+           /* border-bottom:solid red 5px  ###escrever o codigo em uma linha só é a melhor forma*/ ;
+           padding-bottom: 8px;
+           color: white;
+           text-shadow: black 2px 2px 5px, red -2px -2px 5px;
+           text-transform: uppercase;
+        }
+        hr{
+            width: 70%; /* 70% significa que ocupara 705% da tela independente do tamanho*/ 
+            margin: auto;
+            height: 15px;
+            background-color: purple;
+            border: none;
+            border-radius: 5px;
+            box-shadow: black 1px 1px 5px inset;
+
+        }
+
+        P{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            text-align: justify;
+            letter-spacing: 2px; 
+        }
+
+        li{
+            background-color: #7fffd4;
+            list-style: square;  /* muda o marcador da lista"*/ 
+        }
+
+        #destaque{
+            background-color: #ffa500;
+            border: solid 2px black
+        }
+
+        img{
+            width: 300 px;
+            height: 200 px;
+        }
+
+        .desk{
+            background-color: green;
+            padding: 8px;
+        }
+
+        .arredondada{
+            border-radius: 5px; /* para aredondar as bordas*/
+
+        }
+
+        #centro{ text-align: center;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>TECNOLOGIAS WEB</h1>
+    <hr>
+<h2>TECNOLOGIAS WEB</h2>
+<p>Algumas das principais tecnologias e <b>linguagens Web</b> são o HTML, CSS, Javascript e PHP.</p>
+
+<p>São linguagens usadas para estruturar, estilizar e implementar comportamentos dinâmicos aos Web Sites.</p>
+
+<p><b>Também é muito comum o uso de sistemas gerenciadores de banco de dados, como o MySQL, na implementação de sites.</b></p>
+<hr>
+
+<p>Abaixo você encontra uma lista com alguns programas utilizados para o desenvolvimento de sites:</p>
+
+
+<ul>	
+<li id="destaque">Brackets</li>
+	
+<li >Notepad++</li>
+	
+<li >Sublime</li>
+	
+<li >Dreamweaver</li>
+</ul>
+
+<p class="desk arredondada">Desenvolvido de acordo com os padrões web.</p> 
+
+<p id="centro" ><img class="arredondada" src="imagem/chapeleiro.jpg"></p>
+
+    
+
+</body>
+</html>
