@@ -18,8 +18,9 @@
         #static{position: static;}
         #relative{position: relative; left:100px} /* propiedades do position (top, right, bottom, left) */
         #fixed{position: fixed; bottom: 0; right: 0;}
-        #relative_2{position: relative; width: 100px; height: 200px; background: blue;}
+        #relative_2{position: relative; width: 400px; height: 200px; background: blue;}
         #absolute{position: absolute; bottom:-300px; right: 15px; background: black;}
+        #pegajosa{}
     </style>
   
 </head>
@@ -64,7 +65,7 @@
     <p>Um elemento adesivo alterna entre relativee fixed, dependendo da posição de rolagem. Ela é posicionada relativa até que uma determinada posição de deslocamento seja atendida no navegador - então ela "gruda" no lugar (como position: fixed).</p>
     <p><b>Nota:</b>Internet Explorer, Edge 15 e versões anteriores não suportam posicionamento aderente. O Safari exige um prefixo -webkit- (veja o exemplo abaixo). Você também deve especificar pelo menos um de top, right, bottomou leftpara o posicionamento pegajoso para trabalhar.</p>
     <p>Exemplo: </p>
-    <iframe src="teste.html" style="width: 100% border: 4px solid #e5e5e5"></iframe>
+    <iframe src="teste.html" style="width: 100%; border: 4px solid #e5e5e5;"></iframe>
     
     
 </body>
