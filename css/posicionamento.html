@@ -3,7 +3,24 @@
 <html lang="pt-br">
 	<head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Propriedades de posição</title>
+    <style>
+        .box_position{
+            background: #e200ff;
+            width: 300px;
+            height: 50px;
+            color: white;
+            font-family: sans-serif;
+            padding: 20px;
+            font-size: 18pt;
+        }
+
+        #static{position: static;}
+        #relative{position: relative; left:100px} /* propiedades do position (top, right, bottom, left) */
+        #fixed{position: fixed; bottom: 0; right: 0;}
+        #relative_2{position: relative; width: 100px; height: 200px; background: blue;}
+        #absolute{position: absolute; bottom:-300px; right: 15px; background: black;}
+    </style>
   
 </head>
 
