@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade flex</title>
+    <style>
+        *,
+        *::before *::after {
+            /* USAR SEMPRE */
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        p,
+        h1 {
+            text-align: center;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        .container_1 {
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+
+        .fotos {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .foto_errada:hover {
+            border: solid white 5px;
+        }
+
+        .foto_certa:hover {
+            border: solid white 5px;
+        }
+
+        .foto_certa:active {
+            border: solid green 20px;
+        }
+
+        .foto_errada:active {
+            border: solid red 20px;
+        }
+
+        #container_2 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            }
+
+        .fotos_2 {
+            border: solid 1px black;
+            padding: 10px;
+            box-shadow: grey 1px 1px 1px;
+            margin: 10px;
+        }
+
+        #acesse {
+            background-color: maroon;
+            border-radius: 5px;
+            width: 100px;
+            height: 20px;
+            color: white;
+            margin:  0 auto;
+
+        }
+
+        #acesse:hover {
+            background: beige;
+            color: maroon;
+        }
+
+        #foto_item {
+            border-radius: 20px;
+            box-shadow: grey 1px 1px 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Clique na imagem correta</h1>
+    <p>Qual destas imagem não faz parte de esporte?</p>
+    <div class="container_1" id="caixa">
+        <div class="fotos"> <img class="foto_errada" src="imagem.esporte/frescobol.png" alt=""></div>
+        <div class="fotos"> <img class="foto_errada" src="imagem.esporte/Biribol.jpg" alt=""></div>
+        <div class="fotos"> <img class="foto_errada" src="imagem.esporte/beach_socc.jpg" alt=""></div>
+        <div class="fotos"> <img class="foto_certa" src="imagem/chapeleiro.jpg"
+                alt="foto do personagem chapeleiro maluco"></div>
+    </div>
+    <hr>
+    </hr>
+
+    <div id="container_2">
+
+        <div class="fotos_2"><img id="foto_item" src="imagem.esporte/frescobol.png">
+            <p>ITEM</p>
+            <P>Descrição do item</P>
+            <a href="https://www.centauro.com.br/?gclid=Cj0KCQjwnrmlBhDHARIsADJ5b_mX0E9Lkx1STUefgXUHAHvcbTS3KCVbbX7jzv9Z7qJrhk_2PBBeUpwaAueoEALw_wcB&utm_referrer=https://www.google.com/"><p id="acesse">ACESSE</p></a>
+        </div>
+        <div class="fotos_2"> <img id="foto_item" src="imagem.esporte/frescobol.png">
+            </a><p>ITEM</p><P>Descrição do item</P><a href="https://www.centauro.com.br/?gclid=Cj0KCQjwnrmlBhDHARIsADJ5b_mX0E9Lkx1STUefgXUHAHvcbTS3KCVbbX7jzv9Z7qJrhk_2PBBeUpwaAueoEALw_wcB&utm_referrer=https://www.google.com/"><p id="acesse">ACESSE</p></a>
+        </div>
+        <div class="fotos_2"> <img id="foto_item" src="imagem.esporte/frescobol.png">
+            <p>ITEM</p>
+            <P>Descrição do item</P>
+            <a href="https://www.centauro.com.br/?gclid=Cj0KCQjwnrmlBhDHARIsADJ5b_mX0E9Lkx1STUefgXUHAHvcbTS3KCVbbX7jzv9Z7qJrhk_2PBBeUpwaAueoEALw_wcB&utm_referrer=https://www.google.com/"><p id="acesse">ACESSE</p></a>
+        </div>
+    </div>
+</body>
+
+</html>
