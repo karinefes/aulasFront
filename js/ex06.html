@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        document.write("A: "+10*3)
+        document.write("<br>B: "+(12+5))
+        
+        var soma = 5-9*2
+        document.write("<br> C: "+soma)
+
+        var ex04 = soma * ((3+4) / 2)
+        document.write("<br>D: "+ex04)
+
+        var altura =  Number.parseFloat (window.prompt("Qual a sua altura?"))
+        var peso = Number.parseFloat (window.prompt("Qual o seu peso?"))
+        document.write("<br> O seu IMC é " +peso / (altura*altura))
+
+        var lucro =  window.prompt("Qual a porcentagem do seu lucro?")
+        var custo = window.prompt("Qual o valor do seu produto?") 
+        document.write("<br> O seu lucro é R$: "+lucro / 100 * custo)
+
+
+    </script>
+</body>
+</html>
