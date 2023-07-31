@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3 id="texto" onclick="clicar()" onmouseout="sair()" onmouseenter="entrar()">Acende a Lâmpada</h3>
+    <p><img src="img/apagada.jpeg" id="area" onclick="clicar()" onmouseout="sair()" onmouseenter="entrar()"></p> 
+
+
+<script>
+
+   let b = window.document.getElementById('texto');
+
+   function clicar (){
+    b.style.cor = 'yellow' 
+}
+
+function entrar (){
+    a.src = 'img/luz.jpeg'
+}
+
+function sair (){
+    a.src = 'img/apagada.jpeg'
+}
+
+    let a = window.document.getElementById('area');
+
+    function clicar (){
+        a.src = 'img/quebrada.jpg' 
+    }
+
+    function entrar (){
+        a.src = 'img/luz.jpeg'
+    }
+
+    function sair (){
+        a.src = 'img/apagada.jpeg'
+    }
+    </script>
+    
+</body>
+</html>

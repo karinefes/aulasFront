@@ -18,13 +18,18 @@
         var ex04 = soma * ((3+4) / 2)
         document.write("<br>D: "+ex04)
 
-        var altura =  Number.parseFloat (window.prompt("Qual a sua altura?"))
-        var peso = Number.parseFloat (window.prompt("Qual o seu peso?"))
-        document.write("<br> O seu IMC é " +peso / (altura*altura))
+        var altura =  Number.parseFloat (window.prompt("Qual é a sua altura?"))
+        var alturaconvertida = altura.replace("," , ".") //tentativa de retira virgula ao digitar
+        var peso = Number.parseFloat (window.prompt("Qual é o seu peso?"))
+        var resultado = +peso / (alturaconvertida*alturaconvertida)
+          
+
+        document.write("<br> O seu IMC é: " +resultado.toFixed(2)) //PARA FIXAR 2 CASA DEPOIS DA VIRGULA
 
         var lucro =  window.prompt("Qual a porcentagem do seu lucro?")
         var custo = window.prompt("Qual o valor do seu produto?") 
-        document.write("<br> O seu lucro é R$: "+lucro / 100 * custo)
+        var resutado2 = lucro / 100 * custo
+        document.write("<br> O seu lucro é: " + resutado2.toLocaleString('pt-br', {style: 'currency', 'currency': 'BRL'})) //PARA O VALOR APARECER EM REAIS 
 
 
     </script>
