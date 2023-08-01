@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font: normal 18pt arial;
+        }
+
+        #card{
+            width: 350px;
+            text-align: center;
+            margin: 50px;
+            box-shadow: grey 1px 1px 5px;
+            padding: 10px;
+            border-radius: 5%;
+        }
+
+        input{
+            font: normal 18pt arial;
+            width: 200px;
+
+        }
+
+        h1{
+            margin: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>CALCULANDO IMC</h1>
+    <div id="card">
+         <p>
+            <label>Qual a sua altura?</label>
+            <input type="text" name="altura" id="altura" placeholder="ex 1.60">
+         </p>
+
+         <p>
+            <label>Qual o seu peso?</label>
+            <input type="text" name="peso" id="peso">
+         </p>
+
+         <p>
+            <input id="butao" type="button" value="calcular" onclick="calcular">
+         </p>
+
+         <p id="resultado">
+            Resultado
+         </p>
+
+    </div>
+    
+    <script>
+        let bot = window.document.getElementById('butao')
+        bot.addEventListener('click', calcular)
+        //alert('funcionou')
+        function calcular(){
+
+            let peso = window.document.getElementById('peso')
+            let altura = window.document.querySelector('input#altura')
+            let resultado = window.document.getElementById('resultado')
+
+            let n1 = Number(altura.value)
+            let n2 = Number(peso.value)
+            let imc = n2 / (n1*n1)
+            resultado.innerHTML =`Sua altura é: ${n1.toFixed(2)} e o seu peso é: ${n2}, logo o seu IMC é de: ${imc.toFixed(2)}`
+        }
+    </script>
+</body>
+</html>
