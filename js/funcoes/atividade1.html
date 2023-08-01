@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+
+    <style>
+        body{
+            text-align: center;
+
+        }
+
+        div{
+
+        }
+
+        #azul{
+            background: blue;
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+            border: 2px solid black;
+            cursor: pointer;
+
+            
+        }
+
+        #verde{
+            background: green;
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            color: white;
+            border: 2px solid black;
+            cursor: pointer;
+            
+        }
+
+        #laranja{
+            background: orange;
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            color: white;
+            border: 2px solid black;
+            cursor: pointer;
+            
+        
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <h1>Escolhendo a cor e exibindo o seu significado</h1>
+    
+
+    <div id="container">
+        <div>
+           <p id="texto" style="color: blueviolet;"></p>
+           <p class="bnt" id="azul" onclick="document.getElementById('texto').innerHTML = 'Azul significa harmonia e maturidade'">Azul</p>
+           <p class="bnt" id="verde" onclick="document.getElementById('texto').innerHTML = 'Verde significa saúde e esperança'" >Verde</p>
+           <p class="bnt" id="laranja" onclick="document.getElementById('texto').innerHTML = 'Laranja significa força e energia'">Laranja</p>
+        </div>
+    </div>
+    
+
+
+    <script>
+        function insereTexto(){
+              {document.getElementById(Azul).innerHTML = 'FICOU AZUL';}
+        }
+
+
+        document.body.classList.(remove('x', 'x'))
+
+    </script>
+</body>
+</html>
