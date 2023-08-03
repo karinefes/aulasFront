@@ -1,0 +1,30 @@
+
+.cadastro{
+     margin: auto;
+     align-items: center;
+     max-width: 70%;
+     background: red;
+     box-shadow: 5px 5px 5px 5px gray;
+}
+
+.relatorio{
+     margin: auto;
+     align-items: center;
+     max-width: 70%;
+     box-shadow: 5px 5px 5px 5px  gray;
+}
+
+.button{
+    background: greenyellow;
+    color: white;
+}
+
+.linha{
+    background: greenyellow;
+    max-width: 70%;
+}
+
+table:visited{
+    padding: 30px;
+}
+
