@@ -1,16 +1,25 @@
+html{
+   text-align: center;
+}
+
 
 .cadastro{
      margin: auto;
      align-items: center;
-     max-width: 70%;
+     max-width: 80%;
      background: red;
-     box-shadow: 5px 5px 5px 5px gray;
 }
 
+#card{
+     margin: auto;
+     align-items:start;
+     max-width: 80%;
+
+}
 .relatorio{
      margin: auto;
      align-items: center;
-     max-width: 70%;
+     max-width: 80%;
      box-shadow: 5px 5px 5px 5px  gray;
 }
 
@@ -24,7 +33,32 @@
     max-width: 70%;
 }
 
-table:visited{
-    padding: 30px;
+.bimestre{
+    width: 50px;
 }
+
+#bnt{
+    background: greenyellow;
+    color: white;
+    border: none;
+}
+
+input{
+    size: 40px;
+}
+
+form{
+    float:left
+}
+
+table th{
+    border: solid white 2px;
+    justify-items: center;
+
+}
+
+table{
+    width: 100%;
+}
+
 

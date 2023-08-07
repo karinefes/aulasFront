@@ -8,5 +8,5 @@ function salvar(){
     document.getElementById('fnome').innerHTML = nome.value
     document.getElementById('fidade').innerHTML = idade.value
     document.getElementById('fcargo').innerHTML = cargo.value
-    document.getElementById('fsalario').innerHTML = salario.value
+    document.getElementById('fsalario').innerHTML = salariogit.value
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,58 +8,73 @@
     <title>Notas</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
     <div class="cadastro">
-    <h1>Aula 03</h1>
-    <p>Cadastro de notas</p>
-    <form>
-        <label>Nome completo:</label>
-        <input type="text" id="nome">
-
-        <label>Série:</label>
-        <input type="text" id="serie">
-
-        <label>Matéria:</label>
-        <select>
-            <option>Portugês</option>
-            <option>Matemática</option>
-            <option>História</option>
-        </select>
-        <br>
-
-        <label>Bimestre 1</label>
-        <input type="number" id="1bimestre">
-
-        <label>Bimestre 2</label>
-        <input type="number" id="2bimestre">
-
-        <label>Bimestre 3</label>
-        <input type="number" id="3bimestre">
-
-        <label>Bimestre 4</label>
-        <input type="number" id="4bimestre">
-
-        <label>Média</label>
-        <input type="number" id="media" size="1">
-        
-        <button>Calcular</button>
-    </form>
+        <h1>Aula 03</h1>
     </div>
-    
+    <div id="card">
+        <p>Cadastro de notas</p>
+        <form>
+            <p>
+            <label>Nome completo:</label>
+            <input type="text" id="nome">
+
+            <label>Série:</label>
+            <input type="text" id="serie">
+
+            <label>Matéria:</label>
+            <select>
+                <option>Portugês</option>
+                <option>Matemática</option>
+                <option>História</option>
+            </select>
+            </p>
+
+            <p>
+            <label>Bimestre 1</label>
+            <input type="number" id="nota1" class="bimestre">
+
+            <label>Bimestre 2</label>
+            <input type="number" id="nota2" class="bimestre">
+
+            <label>Bimestre 3</label>
+            <input type="number" id="nota3" class="bimestre">
+
+            <label>Bimestre 4</label>
+            <input type="number" id="nota4" class="bimestre">
+
+            <label>Média</label>
+            <input type="number" id="resultado" class="bimestre">
+
+            <button id="bnt" onclick="media()">Calcular</button>
+           </p>
+        </form>
+    </div>
+
     <div class="relatorio">
-        <p>Relatório</p>
         <table class="linha">
-            <tr>
-                <th>Nomecompleto</th>
-                <th>Série</th>
-                <th>Matéria</th>
-                <th>B1</th>
-                <th>B2</th>
-                <th>B3</th>
-                <th>B4</th>
-                <th>Média</th>
-            </tr>
+            <p>Relatório</p>
+            <p></p>
+            <thead>
+               <tr>
+                  <th class="center" id="nome">Nomecompleto</th>
+                  <th class="center" id="serie">Série</th>
+                  <th class="center" id="materias">Matéria</th>
+                  <th class="center" >B1</th>
+                  <th class="center">B2</th>
+                  <th class="center">B3</th>
+                  <th class="center">B4</th>
+                  <th class="center">Média</th>
+                </tr>
+            </thead>
+
+            <tbody id="bodytr"></tbody>
+        </p>
         </table>
     </div>
+
+    <script ></script>
 </body>
+
 </html>
