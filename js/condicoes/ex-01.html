@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+</head>
+<body>
+    <h1>Calculando a idade</h1>
+    <form id="formulario" method="post">
+        <label>Sua data de nascimento:</label>
+        <input type="date" id="nascimento">
+        <br>
+    </form>
+    
+    <button onclick="calcular"() style="background: green;">ENVIAR</button>
+
+        <p id="texto">Resultado aqui</p>
+
+    <script>
+     function calcular (){
+            let ano = document.getElementById("nascimento").value
+            let anoAtual = agora.getfullyear()
+            var resultado = ano - anoAtual
+
+            Document.getElementById("texto").innerHTML = resultado
+        }
+
+        /*if (idade >= 0 & >= 3) {
+            "Bebê"
+        } 
+
+        if (idade >= 4 & <= 7) {
+            "Criança"
+        }
+
+        if (idade >= 8 & <= 12) {
+        "Pré-adolescente"
+        } 
+
+        if (idade >= 13 & <= 19) {
+            "Adolescente"
+        } 
+
+        if (idade >= 20 & <= 59) {
+            "Adulto"
+        }
+
+        if (idade >= 60) {
+            "Idoso"
+        }*/
+
+        
+
+
+    </script>
+</body>
+</html>

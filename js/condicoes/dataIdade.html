@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da Idade</title>
+    <style>
+
+      body{
+        margin: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+#dataNascimento{
+  padding: 10px;
+}
+      button{
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #009688;
+        color: white;
+      }
+      #resultado{
+        padding: 10px;
+        background-color: rgb(206, 201, 142);
+        margin-top: 15px;
+        text-align: center;
+    
+      }
+
+    </style>
+</head>
+
+<body>
+
+  <h1>Calculando a Idade</h1>
+
+  <form id="formulario">
+    <label for="dataNascimento">Data de Nascimento:</label>
+    <input type="date" id="dataNascimento" required>
+    <button type="submit">Calcular Idade</button>
+  </form>
+
+  <div id="resultado" style="display: none;">
+    <p>A idade atual é: <b><span id="idade"></span> anos.</b></p>
+    <p>Sua faixa etária é:<b> <span id="faixa"></span></b>.</p>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      /* refere-se a um evento JavaScript que é 
+       acionado quando todo o documento HTML foi carregado e analisado pelo navegador, e todos 
+       os elementos do DOM (Document Object Model) estão disponíveis para manipulação via JavaScript.*/
+      let formulario = document.getElementById('formulario');
+      let resultadoDiv = document.getElementById('resultado');
+      let idadeSpan = document.getElementById('idade');
+
+      formulario.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        let dataNascimento = document.getElementById('dataNascimento').value;
+        let idadeAtual = calcularIdade(dataNascimento);
+
+        idadeSpan.textContent = idadeAtual;
+        resultadoDiv.style.display = 'block'; //faz aparecer o html que estava oculto.
+      });
+
+      function calcularIdade(dataNascimento) {
+        let hoje = new Date();
+        let nascimento = new Date(dataNascimento);
+        let idade = hoje.getFullYear() - nascimento.getFullYear();
+        let mesAtual = hoje.getMonth();
+        let mesNascimento = nascimento.getMonth();
+
+        if (mesAtual < mesNascimento || (mesAtual === mesNascimento && hoje.getDate() < nascimento.getDate())) {
+          idade--;
+
+        } else if (idade == 0 || idade <= 3){
+          document.getElementById('faixa').innerHTML = "Um Bebê"
+        }else if ((idade >3 && idade <=4) || (idade >4 && idade <= 7)){
+          document.getElementById('faixa').innerHTML = "Uma Criança"
+        }else if ((idade >7 && idade <=8) || (idade >8 && idade <= 12)){
+          document.getElementById('faixa').innerHTML = "Pré-adolescente"
+        }else if ((idade >12 && idade <=13) || (idade >13 && idade <= 19)){
+          document.getElementById('faixa').innerHTML = " Adolescente"
+        }else if ((idade >19 && idade <=20) || (idade >20 && idade <= 59)){
+          document.getElementById('faixa').innerHTML = " Adulto"
+        }else if ((idade >=60)){
+          document.getElementById('faixa').innerHTML = " Idoso"
+        }
+        return idade;
+      }
+    });
+  </script>
+
+</body>
+
+</html>
