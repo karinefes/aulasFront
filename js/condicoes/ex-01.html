@@ -14,37 +14,39 @@
         <br>
     </form>
     
-    <button onclick="calcular"() style="background: green;">ENVIAR</button>
+    <button onclick="calcular"() style="background: green; color: white;">ENVIAR</button>
 
-        <p id="texto">Resultado aqui</p>
+    <div id="resultado" style="display: none; background-color: coral;" >
+        <p>A idade atual é: <b><span id="idade"></span> anos.</b></p>
+        <p>Sua faixa etária é:<b> <span id="faixa"></span></b>.</p>
+    </div>
+    
 
     <script>
      function calcular (){
             let ano = document.getElementById("nascimento").value
-            let anoAtual = agora.getfullyear()
-            var resultado = ano - anoAtual
-
-            Document.getElementById("texto").innerHTML = resultado
+            let anoAtual = new getfullyear()
+            let resultado =  ano - anoAtual
         }
 
-        /*if (idade >= 0 & >= 3) {
-            "Bebê"
+        /*if (idade == 0 || <= 3) {
+            document.getElementById('faixa').innerHTML = "Um Bebê"
         } 
 
         if (idade >= 4 & <= 7) {
-            "Criança"
+            document.getElementById('faixa').innerHTML = "Uma criança"
         }
 
         if (idade >= 8 & <= 12) {
-        "Pré-adolescente"
+            document.getElementById('faixa').innerHTML = "Pré-adolescente"
         } 
 
         if (idade >= 13 & <= 19) {
-            "Adolescente"
+            document.getElementById('faixa').innerHTML = "Adolescente"
         } 
 
         if (idade >= 20 & <= 59) {
-            "Adulto"
+           document.getElementById('faixa').innerHTML = "Adulto"
         }
 
         if (idade >= 60) {
